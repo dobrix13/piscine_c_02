@@ -23,6 +23,8 @@ int		ft_str_is_numeric(const char *str);
 int		ft_str_is_lowercase(const char *str);
 int		ft_str_is_uppercase(const char *str);
 int		ft_str_is_printable(const char *str);
-
+char	*ft_strupcase(char *str);
+char	*ft_strlowcase(char *str);
+char	*ft_strcapitalize(char *str);
 
 #endif

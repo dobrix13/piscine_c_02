@@ -6,7 +6,7 @@
 #    By: avitolin <@students.42wolfsburg.de>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/30 02:21:46 by avitolin          #+#    #+#              #
-#    Updated: 2022/08/02 13:54:19 by avitolin         ###   ########.fr        #
+#    Updated: 2022/08/04 23:03:39 by avitolin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,9 @@ ex_03/ft_str_is_numeric.c \
 ex_04/ft_str_is_lowercase.c \
 ex_05/ft_str_is_uppercase.c \
 ex_06/ft_str_is_printable.c \
+ex_07/ft_strupcase.c \
+ex_08/ft_strlowcase.c \
+ex_09/ft_strcapitalize.c \
 c_02_main.c
 
 all: $(NAME)

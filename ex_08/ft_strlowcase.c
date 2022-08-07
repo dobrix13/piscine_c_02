@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avitolin <@students.42wolfsburg.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/01 15:03:52 by avitolin          #+#    #+#             */
-/*   Updated: 2022/08/02 02:39:21 by avitolin         ###   ########.fr       */
+/*   Created: 2022/08/04 21:50:38 by avitolin          #+#    #+#             */
+/*   Updated: 2022/08/04 21:52:56 by avitolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, const char *src, unsigned int n)
+
+int		ft_is_upper(char c)
+{
+	return (c >= 'A' && c <= 'Z' ? 1 : 0);
+}
+
+char *ft_strlowcase(char *str)
 {
 	int		i;
 
 	i = 0;
-	while (src[i] != '\0' && (unsigned int)i < n)
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (ft_is_upper(str[i]))
+			str[i] = (str[i] + 32);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (str);
 }
-
